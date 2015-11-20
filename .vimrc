@@ -23,5 +23,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
         Plugin 'mattn/emmet-vim'
         Plugin 'moll/vim-node'
         Plugin 'wookiehangover/jshint.vim'
+        Plugin 'scrooloose/nerdtree'
     call vundle#end()
 filetype plugin indent on
