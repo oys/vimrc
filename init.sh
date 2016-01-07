@@ -38,9 +38,27 @@ function Set_html_env()
     set expandtab
 endfunction
 
+function Set_cpp_env()
+    set colorcolumn=80
+    highlight ColorColumn ctermbg=darkgray
+
+    set tabstop=4
+    set softtabstop=4
+    set shiftwidth=4
+    set expandtab
+
+    let &path.="src/include,/usr/include"
+    let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf_cpp.py"
+endfunction
+
 augroup filetype_c
     autocmd!
     autocmd FileType c :call Set_c_env()
+augroup END
+
+augroup filetype_cpp
+    autocmd!
+    autocmd FileType cpp :call Set_cpp_env()
 augroup END
 
 augroup filetype_html
