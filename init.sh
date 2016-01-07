@@ -28,7 +28,7 @@ function Set_c_env()
     set noexpandtab
 
     let &path.="src/include,/usr/include"
-    let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+    let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf_c.py"
 endfunction
 
 function Set_html_env()
